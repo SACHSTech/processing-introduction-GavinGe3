@@ -16,7 +16,7 @@ public class Sketch extends PApplet {
    * values here i.e background, stroke, fill etc.
    */
   public void setup() {
-    background(210, 255, 173);
+    background(14,146,67);
   }
 
   /**
@@ -29,19 +29,16 @@ public class Sketch extends PApplet {
     
     strokeWeight(4);
     fill(0,0,0);
+    
+    // Draw panda ears
     arc(175, 200, 200, 200, HALF_PI+QUARTER_PI, PI+HALF_PI+QUARTER_PI, OPEN);
-
     arc(425, 200, 200, 200, PI+QUARTER_PI, PI+PI+QUARTER_PI, OPEN);
 
-    
-
+    // Draw panda face
     fill(255,255,255);
     ellipse(300, 300, 450, 375);  
     
-
-
-
-    
+    // Draw Panda Eyes
     fill(0,0,0);
     arc(200, 295, 150, 150, HALF_PI+QUARTER_PI+radians(14), PI+HALF_PI+QUARTER_PI-radians(14), OPEN);
     arc(175, 270, 150, 150, radians(-32), HALF_PI+QUARTER_PI-radians(13), OPEN);
@@ -53,6 +50,7 @@ public class Sketch extends PApplet {
     circle(210, 262, 30);
     circle(390, 262, 30);
 
+    // Draw panda nose
     fill(0,0,0);
     ellipse(300, 375, 75, 40);
     noFill();
